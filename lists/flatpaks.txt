@@ -1,0 +1,9 @@
+com.getpostman.Postman
+com.google.Chrome
+com.jetbrains.WebStorm
+com.mattjakeman.ExtensionManager
+com.mojang.Minecraft
+com.transmissionbt.Transmission
+org.mozilla.thunderbird_esr
+org.telegram.desktop
+org.videolan.VLC

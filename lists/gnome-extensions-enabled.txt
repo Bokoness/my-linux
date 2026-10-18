@@ -1,0 +1,16 @@
+extension-list@tu.berry
+copyous@boerdereinar.dev
+hidetopbar@mathieu.bidon.ca
+add-to-desktop@tommimon.github.com
+gtk4-ding@smedius.gitlab.com
+appindicatorsupport@rgcjonas.gmail.com
+trayIconsReloaded@selfmade.pl
+fq@megh
+vertical-workspaces@G-dH.github.com
+caffeine@patapon.info
+just-perfection-desktop@just-perfection
+transparent-top-bar-tweaks@hectorandac.github.io
+apps-menu@gnome-shell-extensions.gcampax.github.com
+background-logo@fedorahosted.org
+launch-new-instance@gnome-shell-extensions.gcampax.github.com
+places-menu@gnome-shell-extensions.gcampax.github.com

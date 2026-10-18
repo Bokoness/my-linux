@@ -1,0 +1,5 @@
+[/]
+current=uint32 0
+mru-sources=[('xkb', 'il'), ('xkb', 'us')]
+sources=[('xkb', 'us'), ('xkb', 'il')]
+xkb-options=['caps:escape_shifted_capslock']

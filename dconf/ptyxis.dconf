@@ -1,0 +1,17 @@
+[/]
+default-profile-uuid='06b5bd1de1409aa46d1a91e96ac7610b'
+interface-style='dark'
+profile-uuids=['06b5bd1de1409aa46d1a91e96ac7610b']
+restore-session=false
+window-size=(uint32 190, uint32 44)
+
+[Profiles/06b5bd1de1409aa46d1a91e96ac7610b]
+opacity=1.0
+palette='Vs Code'
+preserve-directory='never'
+
+[Shortcuts]
+move-next-tab='<Shift><Control>l'
+move-previous-tab='<Shift><Control>h'
+new-tab='<Control>t'
+tab-overview='<Shift><Control>k'
