@@ -63,7 +63,6 @@ Status: ✅ installed · 👤 needs manual action · ⏭️ not installed (by ch
 | Telegram | 7.3.1 | snap | ✅ |
 | VLC | 3.0.24 | snap | ✅ |
 | Thunderbird | 158.0 | snap (preinstalled) | ✅ |
-| Kdenlive | 26.04.3 | snap | ✅ (installed, but removed from the prompts) |
 | Transmission | 4.1.1 | apt (preinstalled) | ✅ |
 | Flameshot | 14.0.0 (latest upstream) | apt | ✅ |
 | Ptyxis | 50.1 | apt (preinstalled) | ✅ |
@@ -106,4 +105,4 @@ Status: ✅ installed · 👤 needs manual action · ⏭️ not installed (by ch
 | Google Drive (Online Accounts) | Settings | 👤 add it yourself |
 
 ## Not installed (by choice)
-podman · rustup · kubectl · terraform · aws CLI / awslocal · mop · Minecraft · dash-to-dock · gtk4-ding · Flatpak/Flathub · rclone · Fedora-only items (background-logo, authselect fingerprint aliases) · docker group membership (ask if wanted)
+podman · rustup · kubectl · terraform · aws CLI / awslocal · mop · Minecraft · Kdenlive (uninstalled) · dash-to-dock · gtk4-ding · Flatpak/Flathub · rclone · Fedora-only items (background-logo, authselect fingerprint aliases) · docker group membership (ask if wanted)
