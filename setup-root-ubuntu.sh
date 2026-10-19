@@ -106,7 +106,24 @@ set_wallpapers(){
   gsettings set org.gnome.desktop.background picture-uri "file://$HOME/Pictures/Wallpapers/light.svg" &&
   gsettings set org.gnome.desktop.background picture-uri-dark "file://$HOME/Pictures/Wallpapers/dark.svg" &&
   gsettings set org.gnome.desktop.background picture-options zoom &&
-  gsettings set org.gnome.desktop.background primary-color '#4389D0'
+  gsettings set org.gnome.desktop.background primary-color '#4389D0' &&
+  # Show the pair as one light/dark tile in Settings → Appearance → Background
+  mkdir -p ~/.local/share/gnome-background-properties &&
+  cat > ~/.local/share/gnome-background-properties/bokoness-solid.xml <<EOF
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE wallpapers SYSTEM "gnome-wp-list.dtd">
+<wallpapers>
+  <wallpaper deleted="false">
+    <name>Blue / Dark Grey</name>
+    <filename>$HOME/Pictures/Wallpapers/light.svg</filename>
+    <filename-dark>$HOME/Pictures/Wallpapers/dark.svg</filename-dark>
+    <options>zoom</options>
+    <shade_type>solid</shade_type>
+    <pcolor>#4389D0</pcolor>
+    <scolor>#000000</scolor>
+  </wallpaper>
+</wallpapers>
+EOF
 }
 run "wallpapers" set_wallpapers
 

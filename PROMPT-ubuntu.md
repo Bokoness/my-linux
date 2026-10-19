@@ -13,7 +13,7 @@ Run `bash setup-root-ubuntu.sh` in my terminal (it asks for my sudo password onc
 - **Google Chrome:** official .deb (it adds its own apt source).
 - **Snaps:** postman, webstorm (`--classic`), telegram-desktop, vlc, thunderbird (preinstalled).
 - **Shell:** `chsh -s /usr/bin/fish`.
-- **Wallpapers:** copies `configs/wallpapers/*.svg` to `~/Pictures/Wallpapers` and sets them (blue for light mode, dark grey for dark mode). Runs as me, no sudo.
+- **Wallpapers:** copies `configs/wallpapers/*.svg` to `~/Pictures/Wallpapers` and sets them (blue for light mode, dark grey for dark mode). It also writes `~/.local/share/gnome-background-properties/bokoness-solid.xml`, so the pair shows as one "Blue / Dark Grey" tile in Settings → Appearance. Runs as me, no sudo.
 
 If you add or remove a package, update the script and this file together.
 
