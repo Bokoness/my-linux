@@ -34,6 +34,7 @@ The backup is the folder that contains this file. Use the files in it as the sou
 - `configs/atuin/`, `configs/flameshot/`, `configs/copyous@boerdereinar.dev/`: app configs for `~/.config/`
 - `configs/fonts/`: JetBrainsMono Nerd Font (goes to `~/.local/share/fonts`)
 - `configs/Bibata-Modern-Classic/`: cursor theme (goes to `~/.local/share/icons`)
+- `configs/wallpapers/`: `light.svg` (blue #4389D0) and `dark.svg` (dark grey #2E2E2E) backgrounds (go to `~/Pictures/Wallpapers`)
 - `configs/gnome-extensions/`: copies of the installed extension folders (fallback only)
 - `dconf/*.dconf`: GNOME settings dumps (extensions, keybindings, Ptyxis, input sources, interface)
 - `dconf/FULL-dump-reference-only.dconf`: full dump. **Do NOT load it wholesale.** Read it only for reference.
@@ -55,6 +56,7 @@ The backup is the folder that contains this file. Use the files in it as the sou
 - **gh:** ask me to run `gh auth login`, then `gh extension install dlvhdr/gh-dash` and `gh alias set co 'pr checkout'`.
 - **SSH:** I restore `~/.ssh` myself. Then run `chmod 700 ~/.ssh && chmod 600 ~/.ssh/id_rsa ~/.ssh/config` and `ssh -T git@github.com`.
 - **Fonts + cursor:** copy `configs/fonts/*` to `~/.local/share/fonts/` and run `fc-cache -f`. Copy `configs/Bibata-Modern-Classic/` to `~/.local/share/icons/` and symlink it into `~/.icons/`.
+- **Wallpapers:** copy `configs/wallpapers/*.svg` to `~/Pictures/Wallpapers/`, then set `org.gnome.desktop.background` `picture-uri` to `light.svg`, `picture-uri-dark` to `dark.svg`, `picture-options zoom`, and `primary-color #4389D0`. Light mode is blue and dark mode is dark grey.
 - **CLIs in `~/.local/bin`:** Claude Code (`curl -fsSL https://claude.ai/install.sh | bash`) and Codex (GitHub release `codex-x86_64-unknown-linux-musl.tar.gz`).
 - **VS Code extensions:** `cat lists/vscode-extensions.txt | xargs -L1 code --install-extension`.
 - **GNOME extensions:** download each from extensions.gnome.org for the running GNOME version (`https://extensions.gnome.org/extension-info/?uuid=<uuid>&shell_version=<major>` gives `download_url`), then `gnome-extensions install --force <zip>`. If there's no build for this GNOME, fall back to `configs/gnome-extensions/`. On Wayland they load only after logout/login. Then enable them, and ask me before enabling V-Shell and Just Perfection, because they change the dash and top bar.

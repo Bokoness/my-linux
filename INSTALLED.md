@@ -96,6 +96,7 @@ Status: ✅ installed · 👤 needs manual action · ⏭️ not installed (by ch
 | atuin, flameshot, copyous configs | `~/.config/…` | ✅ |
 | JetBrainsMono Nerd Font | `~/.local/share/fonts` | ✅ |
 | Bibata-Modern-Classic cursor (size 24) | `~/.local/share/icons` + `~/.icons` | ✅ |
+| Wallpapers: blue (light mode), dark grey (dark mode) | `~/Pictures/Wallpapers` | ✅ |
 | Dark mode, monospace font | gsettings | ✅ |
 | Keyboard: us + il, Caps Lock → Escape | dconf | ✅ |
 | Shortcuts: Ctrl+Alt+S Flameshot, Super+M mute, workspace keys, Super+D | dconf | ✅ |

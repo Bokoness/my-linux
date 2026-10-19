@@ -98,4 +98,16 @@ if [ "$(getent passwd "$USER" | cut -d: -f7)" != "/usr/bin/fish" ]; then
   run "chsh to fish" sudo chsh -s /usr/bin/fish "$USER"
 else ok "fish already default shell"; fi
 
+# ---- Wallpapers (user-level; runs as you, no sudo) ----
+# Light mode: blue #4389D0, dark mode: dark grey #2E2E2E
+REPO="$(dirname "$(readlink -f "$0")")"
+set_wallpapers(){
+  mkdir -p ~/Pictures/Wallpapers && cp "$REPO"/configs/wallpapers/*.svg ~/Pictures/Wallpapers/ &&
+  gsettings set org.gnome.desktop.background picture-uri "file://$HOME/Pictures/Wallpapers/light.svg" &&
+  gsettings set org.gnome.desktop.background picture-uri-dark "file://$HOME/Pictures/Wallpapers/dark.svg" &&
+  gsettings set org.gnome.desktop.background picture-options zoom &&
+  gsettings set org.gnome.desktop.background primary-color '#4389D0'
+}
+run "wallpapers" set_wallpapers
+
 echo; echo "=== Done. Summary: ==="; grep -E '^\[(OK|FAIL)\]' "$LOG" | tail -60
