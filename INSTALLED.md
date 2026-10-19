@@ -69,7 +69,8 @@ Status: ✅ installed · 👤 needs manual action · ⏭️ not installed (by ch
 | GNOME Tweaks | 49.0 | apt | ✅ |
 | Extension Manager | 0.6.5 | apt | ✅ |
 | ChatGPT desktop | | OpenAI preview .deb | 👤 download it yourself |
-| Beeper | | AppImage in `~/Apps/` | 👤 copy it yourself |
+| AppManager | 3.8.0 | AppImage in `~/Apps` + dashboard launcher | ✅ |
+| Beeper | | AppImage in `~/Apps/` (add it with AppManager) | 👤 copy it yourself |
 
 ## GNOME extensions
 | Extension | Version | Source | Status |

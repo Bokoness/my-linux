@@ -64,6 +64,7 @@ The backup is the folder that contains this file. Use the files in it as the sou
   - What these restore: Ctrl+Alt+S runs `flameshot gui`, Super+M mutes, Ctrl+Alt+arrows switch workspace, Ctrl+Shift+Alt+arrows move a window, Super+D shows the desktop, layouts us + il, Caps Lock acts as Escape, Ptyxis "Vs Code" palette, tab shortcuts Ctrl+Shift+H/L/K. Ctrl+Alt+T stays the distro default.
 - **Flameshot:** must be **v14+** (it adds a monitor picker for multi-monitor capture). Check the packaged version first.
 - **Beeper:** I copy the AppImage to `~/Apps/` myself. Install the FUSE 2 library so AppImages run.
+- **AppImages → dashboard:** use AppManager (github.com/kem-a/AppManager), itself an AppImage in `~/Apps` with its own launcher. Drag any AppImage (e.g. Beeper) onto it to install it with a dashboard entry. Don't use AppImageLauncher (unmaintained) or Gear Lever (Flatpak-only, so not on Ubuntu).
 - **ChatGPT desktop:** OpenAI's official Linux preview (.deb / .rpm). I download it myself from OpenAI.
 - **Google Drive:** at the end, ask me to add my Google account in Settings → Online Accounts.
 

@@ -127,4 +127,19 @@ EOF
 }
 run "wallpapers" set_wallpapers
 
+# ---- AppManager: GUI for AppImages (user-level; github.com/kem-a/AppManager) ----
+install_appmanager(){
+  local V F T
+  V=$(curl -fsSL https://api.github.com/repos/kem-a/AppManager/releases/latest | jq -r .tag_name | sed 's/^v//')
+  F=~/Apps/AppManager-$V-x86_64.AppImage
+  [ -f "$F" ] && { echo "AppManager $V already present"; return 0; }
+  mkdir -p ~/Apps ~/.local/share/applications ~/.local/share/icons/hicolor/scalable/apps
+  curl -fsSL -o "$F" "https://github.com/kem-a/AppManager/releases/download/v$V/AppManager-$V-anylinux-x86_64.AppImage" && chmod +x "$F" || return 1
+  T=$(mktemp -d) && (cd "$T" && "$F" --appimage-extract "*.desktop" >/dev/null && "$F" --appimage-extract "com.github.AppManager.svg" >/dev/null) || return 1
+  cp "$T"/squashfs-root/com.github.AppManager.svg ~/.local/share/icons/hicolor/scalable/apps/
+  sed -e "s|^Exec=.*|Exec=$F %u|" -e "s|^TryExec=.*|TryExec=$F|" "$T"/squashfs-root/com.github.AppManager.desktop > ~/.local/share/applications/com.github.AppManager.desktop
+  rm -rf "$T"; update-desktop-database ~/.local/share/applications
+}
+run "AppManager" install_appmanager
+
 echo; echo "=== Done. Summary: ==="; grep -E '^\[(OK|FAIL)\]' "$LOG" | tail -60
