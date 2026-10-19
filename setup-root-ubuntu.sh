@@ -92,7 +92,6 @@ snapi webstorm --classic
 snapi telegram-desktop
 snapi vlc
 snapi thunderbird
-snapi kdenlive
 
 # ---- Default shell ----
 if [ "$(getent passwd "$USER" | cut -d: -f7)" != "/usr/bin/fish" ]; then

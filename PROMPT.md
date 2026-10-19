@@ -21,7 +21,7 @@ The backup is the folder that contains this file. Use the files in it as the sou
 - At the end, give me a summary table (installed / skipped / failed / needs manual action), and update [INSTALLED.md](INSTALLED.md).
 
 ## My choices (both distros, don't ask again)
-- **Don't install:** podman, rustup, kubectl, terraform, aws CLI / awslocal, mop (stocks), Minecraft, dash-to-dock. config.fish still has aliases for some of these. Leave them alone.
+- **Don't install:** podman, rustup, kubectl, terraform, aws CLI / awslocal, mop (stocks), Minecraft, Kdenlive, dash-to-dock. config.fish still has aliases for some of these. Leave them alone.
 - **Don't** set up rclone or Flatpak on Ubuntu (Snap there). Fedora uses Flathub, as before.
 - Fingerprint aliases (`fpoff`/`fpon`) were removed from config.fish. Don't add them back.
 - Do set fish as my default shell (`chsh -s $(which fish)`).

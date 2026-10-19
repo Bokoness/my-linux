@@ -11,7 +11,7 @@ Run `bash setup-root-ubuntu.sh` in my terminal (it asks for my sudo password onc
 - **Docker:** enables the service. It does **not** add me to the docker group. Ask me.
 - **Neovim:** latest release tarball into `/opt/nvim`, symlinked to `/usr/local/bin/nvim` (apt's 0.11 is older than the old machine's 0.12).
 - **Google Chrome:** official .deb (it adds its own apt source).
-- **Snaps:** postman, webstorm (`--classic`), telegram-desktop, vlc, thunderbird (preinstalled), kdenlive.
+- **Snaps:** postman, webstorm (`--classic`), telegram-desktop, vlc, thunderbird (preinstalled).
 - **Shell:** `chsh -s /usr/bin/fish`.
 
 If you add or remove a package, update the script and this file together.

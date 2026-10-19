@@ -19,7 +19,7 @@ This matches the original machine: **Fedora 44, GNOME 50**. Commands use dnf5 (F
 ## 2. Apps (Flathub)
 Fedora uses Flatpak natively, as on the old machine.
 - Enable Flathub if needed: `flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo`.
-- Install: `com.getpostman.Postman`, `com.google.Chrome`, `com.jetbrains.WebStorm`, `com.mattjakeman.ExtensionManager`, `com.transmissionbt.Transmission`, `org.mozilla.thunderbird_esr`, `org.telegram.desktop`, `org.videolan.VLC`, `org.kde.kdenlive`.
+- Install: `com.getpostman.Postman`, `com.google.Chrome`, `com.jetbrains.WebStorm`, `com.mattjakeman.ExtensionManager`, `com.transmissionbt.Transmission`, `org.mozilla.thunderbird_esr`, `org.telegram.desktop`, `org.videolan.VLC`.
 - ChatGPT desktop: OpenAI's preview `.rpm` supports Fedora 43 and 44. I download it myself.
 
 ## 3. GNOME on Fedora
