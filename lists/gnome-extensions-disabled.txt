@@ -1,2 +1,1 @@
-dash-to-dock@micxgx.gmail.com
 window-list@gnome-shell-extensions.gcampax.github.com

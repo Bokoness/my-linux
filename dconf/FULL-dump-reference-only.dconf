@@ -324,7 +324,7 @@ name='Flameshot'
 [org/gnome/shell]
 app-picker-layout=[{'592088e4-b4e0-4ac8-832b-4e555cf33518': <{'position': <0>}>, 'System': <{'position': <1>}>, '879747da-82d9-4b4d-967d-b5bb4b20010e': <{'position': <2>}>, 'Utilities': <{'position': <3>}>, 'e83de120-73c8-43e2-973e-ea261631835b': <{'position': <4>}>, 'f3d9aaf3-78f3-48a0-9753-d8b4fadd91e7': <{'position': <5>}>, 'org.gnome.Settings.desktop': <{'position': <6>}>, 'org.gnome.Contacts.desktop': <{'position': <7>}>, 'com.transmissionbt.Transmission.desktop': <{'position': <8>}>, 'Beeper.desktop': <{'position': <9>}>, 'org.mozilla.thunderbird_esr.desktop': <{'position': <10>}>, 'org.kde.kdenlive.desktop': <{'position': <11>}>, 'org.telegram.desktop.desktop': <{'position': <12>}>, 'com.google.Chrome.desktop': <{'position': <13>}>}]
 disable-user-extensions=false
-disabled-extensions=['gnome-hide-topbar@sonersg.com', 'window-list@gnome-shell-extensions.gcampax.github.com', 'dash-to-dock@micxgx.gmail.com']
+disabled-extensions=['gnome-hide-topbar@sonersg.com', 'window-list@gnome-shell-extensions.gcampax.github.com']
 enabled-extensions=['background-logo@fedorahosted.org', 'extension-list@tu.berry', 'copyous@boerdereinar.dev', 'hidetopbar-lite@rg.unknown', 'vertical-app-grid@lublst.github.io', 'add-to-desktop@tommimon.github.com', 'gtk4-ding@smedius.gitlab.com', 'appindicatorsupport@rgcjonas.gmail.com', 'apps-menu@gnome-shell-extensions.gcampax.github.com', 'launch-new-instance@gnome-shell-extensions.gcampax.github.com', 'places-menu@gnome-shell-extensions.gcampax.github.com', 'trayIconsReloaded@selfmade.pl', 'tasks-in-panel@fthx', 'click-to-close-overview@l3nn4rt.github.io', 'fq@megh', 'vertical-workspaces@G-dH.github.com', 'caffeine@patapon.info', 'just-perfection-desktop@just-perfection', 'transparent-top-bar-tweaks@hectorandac.github.io', 'hidetopbar@mathieu.bidon.ca']
 favorite-apps=['org.mozilla.firefox.desktop', 'org.gnome.Calendar.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.Software.desktop', 'org.gnome.Calculator.desktop', 'chatgpt.desktop']
 last-selected-power-profile='performance'
@@ -340,20 +340,6 @@ user-enabled=true
 database-backend='json'
 disable-hljs-dialog=false
 open-clipboard-dialog-shortcut=['<Super>c']
-
-[org/gnome/shell/extensions/dash-to-dock]
-autohide=true
-autohide-in-fullscreen=true
-background-opacity=0.80000000000000004
-dash-max-icon-size=48
-dock-fixed=false
-dock-position='BOTTOM'
-height-fraction=0.90000000000000002
-intellihide-mode='FOCUS_APPLICATION_WINDOWS'
-preferred-monitor=-2
-preferred-monitor-by-connector='DP-6'
-require-pressure-to-show=false
-show-dock-urgent-notify=false
 
 [org/gnome/shell/extensions/extension-list]
 button-icon=uint32 0

@@ -1,3 +1,5 @@
+export PATH="$HOME/.local/bin:$PATH"
+
 if status is-interactive
     # Commands to run in interactive sessions can go here
 end
@@ -26,11 +28,9 @@ alias lg="lazygit" #Lazygit
 alias l="eza" #Use Eza plugin https://github.com/eza-community/eza
 alias ll="eza -l"
 alias tm="tmux" #Use tmux
-alias cat="bat" # Fedora packages bat as `bat`
+alias cat="bat" # Ubuntu ships it as batcat; ~/.local/bin/bat symlink fixes that
 alias r="ranger" # ranger
-alias fpoff="sudo authselect disable-feature with-fingerprint" # disable fingerprint for bash
 alias startDocker="sudo systemctl restart docker" # restarts docker
-alias fpon="sudo authselect enable-feature with-fingerprint" # enable fingerprint for bash
 alias connect_hg_db="ssh -L 3307:bo-mysql-1-2021-02-02.crmg6rxqqxbh.eu-central-1.rds.amazonaws.com:3306 ness@3.122.222.124 -N"
 alias stocks="~/Apps/mop/mop"
 alias logout="gnome-session-quit --logout"
@@ -65,4 +65,3 @@ type -q atuin; and atuin init fish | source # use atuin
 
 set -x OPENSSL_LIB_DIR /usr/bin/openssl
 set -gx EDITOR nvim
-export PATH="$HOME/.local/bin:$PATH"
